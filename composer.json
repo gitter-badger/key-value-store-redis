@@ -1,0 +1,29 @@
+{
+    "name": "adammbalogh/key-value-store-redis",
+    "description": "Key-value redis store through predis/predis package.",
+    "keywords": ["key", "value", "key-value", "store", "nosql", "redis", "key-value-redis", "predis"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Adam Balogh",
+            "email": "baloghbh@gmail.com",
+            "homepage": "http://code-chronicle.blogspot.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "adammbalogh/key-value-store": "~0.2",
+        "predis/predis": "~1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdammBalogh\\KeyValueStore\\": "src"
+        }
+    },
+    "minimum-stability": "stable"
+}
