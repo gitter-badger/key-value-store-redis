@@ -35,19 +35,6 @@ trait KeyTrait
     }
 
     /**
-     * @param string $key
-     * @param int $timestamp
-     *
-     * @return bool True if the timeout was set, false if the timeout could not be set.
-     *
-     * @throws \Exception
-     */
-    public function expireAt($key, $timestamp)
-    {
-        return (bool)$this->getClient()->expireat($key, $timestamp);
-    }
-
-    /**
      * @return array
      *
      * @throws \Exception
